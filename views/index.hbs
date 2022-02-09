@@ -1,18 +1,55 @@
-<h1>Apsum Norem</h1>
 
-<p>
-    Kecha kelgumdir debon ul sarvi gulro' kelmadi,
-    Ko'zlarimga kecha tong otquncha uyqu kelmadi.
-    Lahza-lahza chiqtimu chektim yo'lida intizor,
-    Keldi jon og'zimg'avu ul sho'xi badxo' kelmadi.
-    Orazidek oydin erkanda gar etti ehtiyot,
-    Ro'zgorimdek ham o'lg'onda qorong'u kelmadi.
-    Ul parivash hajridinkim yig'ladim devonavor,
-    Kimsa bormukim anga ko'rganda kulgu kelmadi.
-    Ko'zlarindin necha suv kelgay deb o'lturmang meni,
-    Kim bori qon erdi kelgan bu kecha suv kelmadi.
-    Tolibi sodiq topilmas, yo'qsakim qo'ydi qadam,
-    Yo'lg'akim avval qadam ma'shuqa o'tro' kelmadi.
-    Ey Navoiy, boda birla xurram et ko'nglung uyin,
-    Ne uchunkim boda kelgan uyga qayg'u kelmadi.
-</p>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="an.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Apsum Norem
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="container py-5">
+        <h1 class="display-1 text-center">Apsum Norem</h1>
+
+        <p class="lead text-center p-3">
+            Kecha kelgumdir debon ul sarvi gulro' kelmadi,
+            Ko'zlarimga kecha tong otquncha uyqu kelmadi.
+            <br>
+            Lahza-lahza chiqtimu chektim yo'lida intizor,
+            Keldi jon og'zimg'avu ul sho'xi badxo' kelmadi.
+        </p>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <input type="number" placeholder="Word count" class="form-control" id="word-count">
+                    </div>
+                    <div class="col-4">
+                        <button class="generate btn btn-primary" type="button">Generate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2 col-8 mx-auto py-5">
+           
+            <div class="card">
+                <div class="card-header d-flex justify-content-end">
+                    <button type="button" class="copy btn btn-sm btn-outline-primary">Copy</button>
+                </div>
+                <div class="card-body">
+                    <div class="spinner d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+
+                    <p class="norem">{norem}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>

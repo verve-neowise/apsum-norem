@@ -1,3 +1,5 @@
+const serviceURL = 'http://localhost:8080/api/generate';
+
 const generate = document.querySelector('.generate');
 const copy = document.querySelector('.copy');
 
@@ -30,7 +32,7 @@ const loadNorem = () => {
 
     const count = Number(wordCount.value)
 
-    axios.get(`http://localhost:8080/api/generate`, { params: { w: count } })
+    axios.get(serviceURL, { params: { w: count } })
         .then(result => {
             showNorem(result.data.norem)
         })

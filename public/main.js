@@ -1,4 +1,4 @@
-const serviceURL = 'http://localhost:8080/api/generate';
+const serviceURL = 'https://apsum-norem.herokuapp.com/api/generate';
 
 const generate = document.querySelector('.generate');
 const copy = document.querySelector('.copy');
